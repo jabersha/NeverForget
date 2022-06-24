@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54947F642865573D00BBDF88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947F632865573D00BBDF88 /* AppDelegate.swift */; };
+		54947F662865573D00BBDF88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947F652865573D00BBDF88 /* SceneDelegate.swift */; };
+		54947F682865573D00BBDF88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947F672865573D00BBDF88 /* ViewController.swift */; };
+		54947F6E2865573D00BBDF88 /* NeverForget.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54947F6C2865573D00BBDF88 /* NeverForget.xcdatamodeld */; };
+		54947F702865574000BBDF88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54947F6F2865574000BBDF88 /* Assets.xcassets */; };
+		54947F732865574000BBDF88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54947F712865574000BBDF88 /* LaunchScreen.storyboard */; };
+		54947F7E2865574000BBDF88 /* NeverForgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947F7D2865574000BBDF88 /* NeverForgetTests.swift */; };
+		54947F882865574000BBDF88 /* NeverForgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947F872865574000BBDF88 /* NeverForgetUITests.swift */; };
+		54947F8A2865574000BBDF88 /* NeverForgetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947F892865574000BBDF88 /* NeverForgetUITestsLaunchTests.swift */; };
+		54947FA12865596300BBDF88 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947F9B2865596300BBDF88 /* LoginPresenter.swift */; };
+		54947FA22865596300BBDF88 /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947F9C2865596300BBDF88 /* LoginWorker.swift */; };
+		54947FA32865596300BBDF88 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947F9D2865596300BBDF88 /* LoginRouter.swift */; };
+		54947FA42865596300BBDF88 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947F9E2865596300BBDF88 /* LoginModels.swift */; };
+		54947FA52865596300BBDF88 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947F9F2865596300BBDF88 /* LoginViewController.swift */; };
+		54947FA62865596300BBDF88 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FA02865596300BBDF88 /* LoginInteractor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54947F7A2865574000BBDF88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54947F582865573D00BBDF88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54947F5F2865573D00BBDF88;
+			remoteInfo = NeverForget;
+		};
+		54947F842865574000BBDF88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54947F582865573D00BBDF88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54947F5F2865573D00BBDF88;
+			remoteInfo = NeverForget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		54947F602865573D00BBDF88 /* NeverForget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeverForget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54947F632865573D00BBDF88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54947F652865573D00BBDF88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		54947F672865573D00BBDF88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		54947F6D2865573D00BBDF88 /* NeverForget.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NeverForget.xcdatamodel; sourceTree = "<group>"; };
+		54947F6F2865574000BBDF88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54947F722865574000BBDF88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		54947F742865574000BBDF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54947F792865574000BBDF88 /* NeverForgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeverForgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54947F7D2865574000BBDF88 /* NeverForgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverForgetTests.swift; sourceTree = "<group>"; };
+		54947F832865574000BBDF88 /* NeverForgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeverForgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54947F872865574000BBDF88 /* NeverForgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverForgetUITests.swift; sourceTree = "<group>"; };
+		54947F892865574000BBDF88 /* NeverForgetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverForgetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		54947F9B2865596300BBDF88 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		54947F9C2865596300BBDF88 /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
+		54947F9D2865596300BBDF88 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		54947F9E2865596300BBDF88 /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
+		54947F9F2865596300BBDF88 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		54947FA02865596300BBDF88 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54947F5D2865573D00BBDF88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54947F762865574000BBDF88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54947F802865574000BBDF88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54947F572865573D00BBDF88 = {
+			isa = PBXGroup;
+			children = (
+				54947F622865573D00BBDF88 /* NeverForget */,
+				54947F7C2865574000BBDF88 /* NeverForgetTests */,
+				54947F862865574000BBDF88 /* NeverForgetUITests */,
+				54947F612865573D00BBDF88 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54947F612865573D00BBDF88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54947F602865573D00BBDF88 /* NeverForget.app */,
+				54947F792865574000BBDF88 /* NeverForgetTests.xctest */,
+				54947F832865574000BBDF88 /* NeverForgetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54947F622865573D00BBDF88 /* NeverForget */ = {
+			isa = PBXGroup;
+			children = (
+				54947F962865589200BBDF88 /* ViewController */,
+				54947F632865573D00BBDF88 /* AppDelegate.swift */,
+				54947F652865573D00BBDF88 /* SceneDelegate.swift */,
+				54947F672865573D00BBDF88 /* ViewController.swift */,
+				54947F6F2865574000BBDF88 /* Assets.xcassets */,
+				54947F712865574000BBDF88 /* LaunchScreen.storyboard */,
+				54947F742865574000BBDF88 /* Info.plist */,
+				54947F6C2865573D00BBDF88 /* NeverForget.xcdatamodeld */,
+			);
+			path = NeverForget;
+			sourceTree = "<group>";
+		};
+		54947F7C2865574000BBDF88 /* NeverForgetTests */ = {
+			isa = PBXGroup;
+			children = (
+				54947F7D2865574000BBDF88 /* NeverForgetTests.swift */,
+			);
+			path = NeverForgetTests;
+			sourceTree = "<group>";
+		};
+		54947F862865574000BBDF88 /* NeverForgetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				54947F872865574000BBDF88 /* NeverForgetUITests.swift */,
+				54947F892865574000BBDF88 /* NeverForgetUITestsLaunchTests.swift */,
+			);
+			path = NeverForgetUITests;
+			sourceTree = "<group>";
+		};
+		54947F962865589200BBDF88 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				54947F98286558DD00BBDF88 /* Login */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		54947F97286558AD00BBDF88 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54947F98286558DD00BBDF88 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				54947F97286558AD00BBDF88 /* View */,
+				54947F9B2865596300BBDF88 /* LoginPresenter.swift */,
+				54947F9C2865596300BBDF88 /* LoginWorker.swift */,
+				54947F9D2865596300BBDF88 /* LoginRouter.swift */,
+				54947F9E2865596300BBDF88 /* LoginModels.swift */,
+				54947F9F2865596300BBDF88 /* LoginViewController.swift */,
+				54947FA02865596300BBDF88 /* LoginInteractor.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54947F5F2865573D00BBDF88 /* NeverForget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54947F8D2865574000BBDF88 /* Build configuration list for PBXNativeTarget "NeverForget" */;
+			buildPhases = (
+				54947F5C2865573D00BBDF88 /* Sources */,
+				54947F5D2865573D00BBDF88 /* Frameworks */,
+				54947F5E2865573D00BBDF88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeverForget;
+			productName = NeverForget;
+			productReference = 54947F602865573D00BBDF88 /* NeverForget.app */;
+			productType = "com.apple.product-type.application";
+		};
+		54947F782865574000BBDF88 /* NeverForgetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54947F902865574000BBDF88 /* Build configuration list for PBXNativeTarget "NeverForgetTests" */;
+			buildPhases = (
+				54947F752865574000BBDF88 /* Sources */,
+				54947F762865574000BBDF88 /* Frameworks */,
+				54947F772865574000BBDF88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54947F7B2865574000BBDF88 /* PBXTargetDependency */,
+			);
+			name = NeverForgetTests;
+			productName = NeverForgetTests;
+			productReference = 54947F792865574000BBDF88 /* NeverForgetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		54947F822865574000BBDF88 /* NeverForgetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54947F932865574000BBDF88 /* Build configuration list for PBXNativeTarget "NeverForgetUITests" */;
+			buildPhases = (
+				54947F7F2865574000BBDF88 /* Sources */,
+				54947F802865574000BBDF88 /* Frameworks */,
+				54947F812865574000BBDF88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54947F852865574000BBDF88 /* PBXTargetDependency */,
+			);
+			name = NeverForgetUITests;
+			productName = NeverForgetUITests;
+			productReference = 54947F832865574000BBDF88 /* NeverForgetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54947F582865573D00BBDF88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					54947F5F2865573D00BBDF88 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					54947F782865574000BBDF88 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 54947F5F2865573D00BBDF88;
+					};
+					54947F822865574000BBDF88 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 54947F5F2865573D00BBDF88;
+					};
+				};
+			};
+			buildConfigurationList = 54947F5B2865573D00BBDF88 /* Build configuration list for PBXProject "NeverForget" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54947F572865573D00BBDF88;
+			productRefGroup = 54947F612865573D00BBDF88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54947F5F2865573D00BBDF88 /* NeverForget */,
+				54947F782865574000BBDF88 /* NeverForgetTests */,
+				54947F822865574000BBDF88 /* NeverForgetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54947F5E2865573D00BBDF88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54947F732865574000BBDF88 /* LaunchScreen.storyboard in Resources */,
+				54947F702865574000BBDF88 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54947F772865574000BBDF88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54947F812865574000BBDF88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54947F5C2865573D00BBDF88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54947FA52865596300BBDF88 /* LoginViewController.swift in Sources */,
+				54947F682865573D00BBDF88 /* ViewController.swift in Sources */,
+				54947FA42865596300BBDF88 /* LoginModels.swift in Sources */,
+				54947F642865573D00BBDF88 /* AppDelegate.swift in Sources */,
+				54947F662865573D00BBDF88 /* SceneDelegate.swift in Sources */,
+				54947F6E2865573D00BBDF88 /* NeverForget.xcdatamodeld in Sources */,
+				54947FA12865596300BBDF88 /* LoginPresenter.swift in Sources */,
+				54947FA32865596300BBDF88 /* LoginRouter.swift in Sources */,
+				54947FA62865596300BBDF88 /* LoginInteractor.swift in Sources */,
+				54947FA22865596300BBDF88 /* LoginWorker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54947F752865574000BBDF88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54947F7E2865574000BBDF88 /* NeverForgetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54947F7F2865574000BBDF88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54947F8A2865574000BBDF88 /* NeverForgetUITestsLaunchTests.swift in Sources */,
+				54947F882865574000BBDF88 /* NeverForgetUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54947F7B2865574000BBDF88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54947F5F2865573D00BBDF88 /* NeverForget */;
+			targetProxy = 54947F7A2865574000BBDF88 /* PBXContainerItemProxy */;
+		};
+		54947F852865574000BBDF88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54947F5F2865573D00BBDF88 /* NeverForget */;
+			targetProxy = 54947F842865574000BBDF88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		54947F712865574000BBDF88 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54947F722865574000BBDF88 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54947F8B2865574000BBDF88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		54947F8C2865574000BBDF88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54947F8E2865574000BBDF88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PJKG67XLM8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NeverForget/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.jabinho.NeverForget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54947F8F2865574000BBDF88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PJKG67XLM8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NeverForget/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.jabinho.NeverForget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		54947F912865574000BBDF88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PJKG67XLM8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.jabinho.NeverForgetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeverForget.app/NeverForget";
+			};
+			name = Debug;
+		};
+		54947F922865574000BBDF88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PJKG67XLM8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.jabinho.NeverForgetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeverForget.app/NeverForget";
+			};
+			name = Release;
+		};
+		54947F942865574000BBDF88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PJKG67XLM8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.jabinho.NeverForgetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NeverForget;
+			};
+			name = Debug;
+		};
+		54947F952865574000BBDF88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PJKG67XLM8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.jabinho.NeverForgetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NeverForget;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54947F5B2865573D00BBDF88 /* Build configuration list for PBXProject "NeverForget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54947F8B2865574000BBDF88 /* Debug */,
+				54947F8C2865574000BBDF88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54947F8D2865574000BBDF88 /* Build configuration list for PBXNativeTarget "NeverForget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54947F8E2865574000BBDF88 /* Debug */,
+				54947F8F2865574000BBDF88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54947F902865574000BBDF88 /* Build configuration list for PBXNativeTarget "NeverForgetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54947F912865574000BBDF88 /* Debug */,
+				54947F922865574000BBDF88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54947F932865574000BBDF88 /* Build configuration list for PBXNativeTarget "NeverForgetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54947F942865574000BBDF88 /* Debug */,
+				54947F952865574000BBDF88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		54947F6C2865573D00BBDF88 /* NeverForget.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				54947F6D2865573D00BBDF88 /* NeverForget.xcdatamodel */,
+			);
+			currentVersion = 54947F6D2865573D00BBDF88 /* NeverForget.xcdatamodel */;
+			path = NeverForget.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 54947F582865573D00BBDF88 /* Project object */;
+}
