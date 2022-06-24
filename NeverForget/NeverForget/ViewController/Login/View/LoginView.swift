@@ -19,6 +19,8 @@ class LoginView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    var delegate: LoginViewControllerDelegate?
+
     
     lazy var logoImg: UIImageView = {
         let view = UIImageView(frame: .zero)
@@ -75,7 +77,8 @@ class LoginView: UIView {
     
     
     @objc func buttonAct(sender: UIButton!){
-        print("Teste")
+        self.delegate = LoginViewController()
+        self.delegate?.nextView()
     }
     
     

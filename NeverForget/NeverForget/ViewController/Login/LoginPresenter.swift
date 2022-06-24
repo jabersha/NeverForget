@@ -15,10 +15,12 @@ import UIKit
 protocol LoginPresentationLogic{
     func presentSomething(response: Login.Something.Response)
     func presentView(response: Login.LoginView.Response)
+    func presentMapView()
 
 }
 
 class LoginPresenter: LoginPresentationLogic{
+    
      var viewController: LoginDisplayLogic?
     
     // MARK: Do something
@@ -31,5 +33,9 @@ class LoginPresenter: LoginPresentationLogic{
     func presentView(response: Login.LoginView.Response){
         let viewModel = Login.LoginView.ViewModel(view: LoginView())
         viewController?.displayView(viewModel: viewModel)
+    }
+    
+    func presentMapView() {
+        viewController?.displayMap()
     }
 }

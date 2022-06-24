@@ -16,6 +16,8 @@ protocol LoginBusinessLogic
 {
     func doSomething(request: Login.Something.Request)
     func doLoadView(request: Login.LoginView.Request)
+    func doMapView()
+
 
 }
 
@@ -24,8 +26,8 @@ protocol LoginDataStore
     //var name: String { get set }
 }
 
-class LoginInteractor: LoginBusinessLogic, LoginDataStore
-{
+class LoginInteractor: LoginBusinessLogic, LoginDataStore{
+    
     var presenter: LoginPresentationLogic?
     var worker: LoginWorker?
     //var name: String = ""
@@ -41,11 +43,15 @@ class LoginInteractor: LoginBusinessLogic, LoginDataStore
     }
     
     func doLoadView(request: Login.LoginView.Request){
-//        worker = LoginWorker()
-//        worker?.doView()
         
         let response = Login.LoginView.Response(view: LoginView())
         presenter?.presentView(response: response)
+    }
+    
+    func doMapView() {
+        
+        presenter?.presentMapView()
+        
     }
     
 }
