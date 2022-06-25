@@ -28,7 +28,6 @@ class LoginViewController: UIViewController, LoginDisplayLogic, LoginViewControl
     
     var interactor: LoginBusinessLogic?
     var router: (NSObjectProtocol & LoginRoutingLogic & LoginDataPassing)?
-    var vc = LoginView()
     
     // MARK: Object lifecycle
     

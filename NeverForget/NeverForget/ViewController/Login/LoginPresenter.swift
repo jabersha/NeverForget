@@ -21,7 +21,7 @@ protocol LoginPresentationLogic{
 
 class LoginPresenter: LoginPresentationLogic{
     
-     var viewController: LoginDisplayLogic?
+     var viewController: (LoginDisplayLogic & LoginViewControllerDelegate)?
     
     // MARK: Do something
     
@@ -31,7 +31,9 @@ class LoginPresenter: LoginPresentationLogic{
     }
     
     func presentView(response: Login.LoginView.Response){
-        let viewModel = Login.LoginView.ViewModel(view: LoginView())
+        let loginView: LoginView = .init()
+        loginView.delegate = viewController
+        let viewModel = Login.LoginView.ViewModel(view: loginView)
         viewController?.displayView(viewModel: viewModel)
     }
     

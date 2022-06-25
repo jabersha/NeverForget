@@ -77,7 +77,6 @@ class LoginView: UIView {
     
     
     @objc func buttonAct(sender: UIButton!){
-        self.delegate = LoginViewController()
         self.delegate?.nextView()
     }
     
@@ -130,7 +129,7 @@ extension LoginView: CodeView{
     }
     
     func additionalConfig() {
-        backgroundColor = UIColor.systemGray
+        backgroundColor = UIColor.systemBlue
     }
     
 }

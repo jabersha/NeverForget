@@ -13,7 +13,6 @@
 import UIKit
 
 @objc protocol LoginRoutingLogic{
-    //func routeToSomewhere(segue: UIStoryboardSegue?)
     func routeToMap()
 }
 
@@ -30,8 +29,9 @@ class LoginRouter: NSObject, LoginRoutingLogic, LoginDataPassing{
     
     func routeToMap() {
         
-        let vc = MapViewController()
-        navigateToMap(source: viewController!, destination: vc)
+        let nextVC = MapViewController()
+        
+        viewController?.navigationController?.pushViewController(nextVC, animated: true)
         
     }
     //func routeToSomewhere(segue: UIStoryboardSegue?)
@@ -50,12 +50,12 @@ class LoginRouter: NSObject, LoginRoutingLogic, LoginDataPassing{
     //}
     
     // MARK: Navigation
-    
-    func navigateToMap(source: LoginViewController, destination: UIViewController){
-        source.show(destination, sender: nil)
-//        source.navigationController?.pushViewController(destination, animated: true)
-        
-    }
+//
+//    func navigateToMap(source: LoginViewController, destination: UIViewController){
+//        source.show(destination, sender: nil)
+////        source.navigationController?.pushViewController(destination, animated: true)
+//
+//    }
     
     // MARK: Passing data
     
