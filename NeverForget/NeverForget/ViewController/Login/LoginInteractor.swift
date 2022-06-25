@@ -14,28 +14,44 @@ import UIKit
 
 protocol LoginBusinessLogic
 {
-  func doSomething(request: Login.Something.Request)
+    func doSomething(request: Login.Something.Request)
+    func doLoadView(request: Login.LoginView.Request)
+    func doMapView()
+
+
 }
 
 protocol LoginDataStore
 {
-  //var name: String { get set }
+    //var name: String { get set }
 }
 
-class LoginInteractor: LoginBusinessLogic, LoginDataStore
-{
-  var presenter: LoginPresentationLogic?
-  var worker: LoginWorker?
-  //var name: String = ""
-  
-  // MARK: Do something
-  
-  func doSomething(request: Login.Something.Request)
-  {
-    worker = LoginWorker()
-    worker?.doSomeWork()
+class LoginInteractor: LoginBusinessLogic, LoginDataStore{
     
-    let response = Login.Something.Response()
-    presenter?.presentSomething(response: response)
-  }
+    var presenter: LoginPresentationLogic?
+    var worker: LoginWorker?
+    //var name: String = ""
+    
+    // MARK: Do something
+    
+    func doSomething(request: Login.Something.Request){
+        worker = LoginWorker()
+        worker?.doSomeWork()
+        
+        let response = Login.Something.Response()
+        presenter?.presentSomething(response: response)
+    }
+    
+    func doLoadView(request: Login.LoginView.Request){
+        
+        let response = Login.LoginView.Response(view: LoginView())
+        presenter?.presentView(response: response)
+    }
+    
+    func doMapView() {
+        
+        presenter?.presentMapView()
+        
+    }
+    
 }

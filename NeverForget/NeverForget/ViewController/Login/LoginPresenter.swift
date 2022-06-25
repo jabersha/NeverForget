@@ -12,20 +12,32 @@
 
 import UIKit
 
-protocol LoginPresentationLogic
-{
-  func presentSomething(response: Login.Something.Response)
+protocol LoginPresentationLogic{
+    func presentSomething(response: Login.Something.Response)
+    func presentView(response: Login.LoginView.Response)
+    func presentMapView()
+
 }
 
-class LoginPresenter: LoginPresentationLogic
-{
-  weak var viewController: LoginDisplayLogic?
-  
-  // MARK: Do something
-  
-  func presentSomething(response: Login.Something.Response)
-  {
-    let viewModel = Login.Something.ViewModel()
-    viewController?.displaySomething(viewModel: viewModel)
-  }
+class LoginPresenter: LoginPresentationLogic{
+    
+     var viewController: (LoginDisplayLogic & LoginViewControllerDelegate)?
+    
+    // MARK: Do something
+    
+    func presentSomething(response: Login.Something.Response){
+        let viewModel = Login.Something.ViewModel()
+        viewController?.displaySomething(viewModel: viewModel)
+    }
+    
+    func presentView(response: Login.LoginView.Response){
+        let loginView: LoginView = .init()
+        loginView.delegate = viewController
+        let viewModel = Login.LoginView.ViewModel(view: loginView)
+        viewController?.displayView(viewModel: viewModel)
+    }
+    
+    func presentMapView() {
+        viewController?.displayMap()
+    }
 }

@@ -22,6 +22,17 @@
 		54947FA42865596300BBDF88 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947F9E2865596300BBDF88 /* LoginModels.swift */; };
 		54947FA52865596300BBDF88 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947F9F2865596300BBDF88 /* LoginViewController.swift */; };
 		54947FA62865596300BBDF88 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FA02865596300BBDF88 /* LoginInteractor.swift */; };
+		54947FA8286569A000BBDF88 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FA7286569A000BBDF88 /* LoginView.swift */; };
+		54947FAB28656A6400BBDF88 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 54947FAA28656A6400BBDF88 /* SnapKit */; };
+		54947FAE28656AB900BBDF88 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FAD28656AB900BBDF88 /* CodeView.swift */; };
+		54947FB028656D9800BBDF88 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FAF28656D9800BBDF88 /* Color+Extension.swift */; };
+		54947FB92865823700BBDF88 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FB32865823700BBDF88 /* MapPresenter.swift */; };
+		54947FBA2865823700BBDF88 /* MapWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FB42865823700BBDF88 /* MapWorker.swift */; };
+		54947FBB2865823700BBDF88 /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FB52865823700BBDF88 /* MapRouter.swift */; };
+		54947FBC2865823700BBDF88 /* MapModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FB62865823700BBDF88 /* MapModels.swift */; };
+		54947FBD2865823700BBDF88 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FB72865823700BBDF88 /* MapViewController.swift */; };
+		54947FBE2865823700BBDF88 /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FB82865823700BBDF88 /* MapInteractor.swift */; };
+		54947FC02865869100BBDF88 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FBF2865869100BBDF88 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +72,16 @@
 		54947F9E2865596300BBDF88 /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
 		54947F9F2865596300BBDF88 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		54947FA02865596300BBDF88 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		54947FA7286569A000BBDF88 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		54947FAD28656AB900BBDF88 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
+		54947FAF28656D9800BBDF88 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		54947FB32865823700BBDF88 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		54947FB42865823700BBDF88 /* MapWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapWorker.swift; sourceTree = "<group>"; };
+		54947FB52865823700BBDF88 /* MapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
+		54947FB62865823700BBDF88 /* MapModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModels.swift; sourceTree = "<group>"; };
+		54947FB72865823700BBDF88 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		54947FB82865823700BBDF88 /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		54947FBF2865869100BBDF88 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54947FAB28656A6400BBDF88 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +133,7 @@
 		54947F622865573D00BBDF88 /* NeverForget */ = {
 			isa = PBXGroup;
 			children = (
+				54947FAC28656A7F00BBDF88 /* Util */,
 				54947F962865589200BBDF88 /* ViewController */,
 				54947F632865573D00BBDF88 /* AppDelegate.swift */,
 				54947F652865573D00BBDF88 /* SceneDelegate.swift */,
@@ -143,6 +166,7 @@
 		54947F962865589200BBDF88 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				54947FB12865821200BBDF88 /* Map */,
 				54947F98286558DD00BBDF88 /* Login */,
 			);
 			path = ViewController;
@@ -151,6 +175,7 @@
 		54947F97286558AD00BBDF88 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				54947FA7286569A000BBDF88 /* LoginView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -169,6 +194,37 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		54947FAC28656A7F00BBDF88 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				54947FAD28656AB900BBDF88 /* CodeView.swift */,
+				54947FAF28656D9800BBDF88 /* Color+Extension.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		54947FB12865821200BBDF88 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				54947FB22865821E00BBDF88 /* View */,
+				54947FB32865823700BBDF88 /* MapPresenter.swift */,
+				54947FB42865823700BBDF88 /* MapWorker.swift */,
+				54947FB52865823700BBDF88 /* MapRouter.swift */,
+				54947FB62865823700BBDF88 /* MapModels.swift */,
+				54947FB72865823700BBDF88 /* MapViewController.swift */,
+				54947FB82865823700BBDF88 /* MapInteractor.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		54947FB22865821E00BBDF88 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54947FBF2865869100BBDF88 /* MapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -185,6 +241,9 @@
 			dependencies = (
 			);
 			name = NeverForget;
+			packageProductDependencies = (
+				54947FAA28656A6400BBDF88 /* SnapKit */,
+			);
 			productName = NeverForget;
 			productReference = 54947F602865573D00BBDF88 /* NeverForget.app */;
 			productType = "com.apple.product-type.application";
@@ -257,6 +316,9 @@
 				Base,
 			);
 			mainGroup = 54947F572865573D00BBDF88;
+			packageReferences = (
+				54947FA928656A6400BBDF88 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 54947F612865573D00BBDF88 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -300,15 +362,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				54947FA52865596300BBDF88 /* LoginViewController.swift in Sources */,
+				54947FB92865823700BBDF88 /* MapPresenter.swift in Sources */,
 				54947F682865573D00BBDF88 /* ViewController.swift in Sources */,
 				54947FA42865596300BBDF88 /* LoginModels.swift in Sources */,
+				54947FAE28656AB900BBDF88 /* CodeView.swift in Sources */,
+				54947FBC2865823700BBDF88 /* MapModels.swift in Sources */,
+				54947FBA2865823700BBDF88 /* MapWorker.swift in Sources */,
 				54947F642865573D00BBDF88 /* AppDelegate.swift in Sources */,
 				54947F662865573D00BBDF88 /* SceneDelegate.swift in Sources */,
 				54947F6E2865573D00BBDF88 /* NeverForget.xcdatamodeld in Sources */,
+				54947FBB2865823700BBDF88 /* MapRouter.swift in Sources */,
 				54947FA12865596300BBDF88 /* LoginPresenter.swift in Sources */,
 				54947FA32865596300BBDF88 /* LoginRouter.swift in Sources */,
+				54947FBD2865823700BBDF88 /* MapViewController.swift in Sources */,
+				54947FA8286569A000BBDF88 /* LoginView.swift in Sources */,
 				54947FA62865596300BBDF88 /* LoginInteractor.swift in Sources */,
 				54947FA22865596300BBDF88 /* LoginWorker.swift in Sources */,
+				54947FC02865869100BBDF88 /* MapView.swift in Sources */,
+				54947FBE2865823700BBDF88 /* MapInteractor.swift in Sources */,
+				54947FB028656D9800BBDF88 /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +478,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IBSC_FLATTEN_NIBS = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -460,6 +533,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IBSC_FLATTEN_NIBS = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -482,6 +556,7 @@
 				INFOPLIST_FILE = NeverForget/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortraitUpsideDown;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -493,7 +568,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -509,6 +584,7 @@
 				INFOPLIST_FILE = NeverForget/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortraitUpsideDown;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -520,7 +596,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -640,6 +716,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		54947FA928656A6400BBDF88 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		54947FAA28656A6400BBDF88 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54947FA928656A6400BBDF88 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		54947F6C2865573D00BBDF88 /* NeverForget.xcdatamodeld */ = {
