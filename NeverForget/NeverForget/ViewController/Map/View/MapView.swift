@@ -19,37 +19,65 @@ class MapView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    lazy var maps = MKMapView()
-    
+    var locationManager:CLLocationManager!
 
-    @objc func buttonAct(sender: UIButton!){
-        print("Teste")
-    }
     
-    
+    lazy var maps:MKMapView = {
+        let map = MKMapView(frame: .zero)
+        map.mapType = MKMapType.standard
+        map.isZoomEnabled = true
+        map.isScrollEnabled = true
+        map.isRotateEnabled = true
+        
+        determineCurrentLocation()
+        
+        return map
+    }()
     
 }
 
 extension MapView: CodeView{
     func buildHierarchy() {
         addSubview(maps)
-//        addSubview(logoImg)
 
     }
     
     func configConstraints() {
         maps.snp.makeConstraints { make in
-            make.top.bottom.left.right.equalToSuperview()
+            make.top.equalTo(safeAreaLayoutGuide)
+            make.bottom.left.right.equalToSuperview()
         }
-//        logoImg.snp.makeConstraints{ make in
-//            make.top.equalTo(safeAreaLayoutGuide.snp.top).inset(70)
-//            make.centerX.equalToSuperview()
-//
-//        }
     }
     
     func additionalConfig() {
         backgroundColor = UIColor.systemBlue
     }
     
+}
+
+extension MapView: MKMapViewDelegate, CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let mUserLocation:CLLocation = locations[0] as CLLocation
+        
+        let center = CLLocationCoordinate2D(latitude: mUserLocation.coordinate.latitude, longitude: mUserLocation.coordinate.longitude)
+        let mRegion = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+        
+        maps.setRegion(mRegion, animated: true)
+    }
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Error - locationManager: \(error.localizedDescription)")
+    }
+    //MARK:- Intance Methods
+    
+    func determineCurrentLocation() {
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestAlwaysAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.startUpdatingLocation()
+        }
+    }
 }

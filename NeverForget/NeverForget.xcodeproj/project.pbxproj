@@ -33,6 +33,15 @@
 		54947FBD2865823700BBDF88 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FB72865823700BBDF88 /* MapViewController.swift */; };
 		54947FBE2865823700BBDF88 /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FB82865823700BBDF88 /* MapInteractor.swift */; };
 		54947FC02865869100BBDF88 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FBF2865869100BBDF88 /* MapView.swift */; };
+		54947FC32867CD4300BBDF88 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54947FC22867CD4300BBDF88 /* MapKit.framework */; };
+		54947FCD28693FFB00BBDF88 /* ItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FC728693FFB00BBDF88 /* ItemPresenter.swift */; };
+		54947FCE28693FFB00BBDF88 /* ItemWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FC828693FFB00BBDF88 /* ItemWorker.swift */; };
+		54947FCF28693FFB00BBDF88 /* ItemRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FC928693FFB00BBDF88 /* ItemRouter.swift */; };
+		54947FD028693FFB00BBDF88 /* ItemModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FCA28693FFB00BBDF88 /* ItemModels.swift */; };
+		54947FD128693FFB00BBDF88 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FCB28693FFB00BBDF88 /* ItemViewController.swift */; };
+		54947FD228693FFB00BBDF88 /* ItemInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FCC28693FFB00BBDF88 /* ItemInteractor.swift */; };
+		54947FD52869401800BBDF88 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FD42869401800BBDF88 /* ItemView.swift */; };
+		54947FD7286959D200BBDF88 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FD6286959D100BBDF88 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +91,15 @@
 		54947FB72865823700BBDF88 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		54947FB82865823700BBDF88 /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
 		54947FBF2865869100BBDF88 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		54947FC22867CD4300BBDF88 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		54947FC728693FFB00BBDF88 /* ItemPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPresenter.swift; sourceTree = "<group>"; };
+		54947FC828693FFB00BBDF88 /* ItemWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemWorker.swift; sourceTree = "<group>"; };
+		54947FC928693FFB00BBDF88 /* ItemRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRouter.swift; sourceTree = "<group>"; };
+		54947FCA28693FFB00BBDF88 /* ItemModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModels.swift; sourceTree = "<group>"; };
+		54947FCB28693FFB00BBDF88 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		54947FCC28693FFB00BBDF88 /* ItemInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInteractor.swift; sourceTree = "<group>"; };
+		54947FD42869401800BBDF88 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		54947FD6286959D100BBDF88 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54947FC32867CD4300BBDF88 /* MapKit.framework in Frameworks */,
 				54947FAB28656A6400BBDF88 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,6 +136,7 @@
 				54947F7C2865574000BBDF88 /* NeverForgetTests */,
 				54947F862865574000BBDF88 /* NeverForgetUITests */,
 				54947F612865573D00BBDF88 /* Products */,
+				54947FC12867CD4300BBDF88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,6 +186,7 @@
 		54947F962865589200BBDF88 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				54947FC628693FE300BBDF88 /* Item */,
 				54947FB12865821200BBDF88 /* Map */,
 				54947F98286558DD00BBDF88 /* Login */,
 			);
@@ -221,6 +242,37 @@
 			isa = PBXGroup;
 			children = (
 				54947FBF2865869100BBDF88 /* MapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54947FC12867CD4300BBDF88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54947FC22867CD4300BBDF88 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54947FC628693FE300BBDF88 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				54947FD32869400200BBDF88 /* View */,
+				54947FC728693FFB00BBDF88 /* ItemPresenter.swift */,
+				54947FC828693FFB00BBDF88 /* ItemWorker.swift */,
+				54947FC928693FFB00BBDF88 /* ItemRouter.swift */,
+				54947FCA28693FFB00BBDF88 /* ItemModels.swift */,
+				54947FCB28693FFB00BBDF88 /* ItemViewController.swift */,
+				54947FCC28693FFB00BBDF88 /* ItemInteractor.swift */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		54947FD32869400200BBDF88 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54947FD42869401800BBDF88 /* ItemView.swift */,
+				54947FD6286959D100BBDF88 /* ItemCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -362,25 +414,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				54947FA52865596300BBDF88 /* LoginViewController.swift in Sources */,
+				54947FCD28693FFB00BBDF88 /* ItemPresenter.swift in Sources */,
 				54947FB92865823700BBDF88 /* MapPresenter.swift in Sources */,
 				54947F682865573D00BBDF88 /* ViewController.swift in Sources */,
+				54947FD7286959D200BBDF88 /* ItemCell.swift in Sources */,
 				54947FA42865596300BBDF88 /* LoginModels.swift in Sources */,
 				54947FAE28656AB900BBDF88 /* CodeView.swift in Sources */,
+				54947FD028693FFB00BBDF88 /* ItemModels.swift in Sources */,
 				54947FBC2865823700BBDF88 /* MapModels.swift in Sources */,
 				54947FBA2865823700BBDF88 /* MapWorker.swift in Sources */,
 				54947F642865573D00BBDF88 /* AppDelegate.swift in Sources */,
 				54947F662865573D00BBDF88 /* SceneDelegate.swift in Sources */,
 				54947F6E2865573D00BBDF88 /* NeverForget.xcdatamodeld in Sources */,
+				54947FCF28693FFB00BBDF88 /* ItemRouter.swift in Sources */,
 				54947FBB2865823700BBDF88 /* MapRouter.swift in Sources */,
 				54947FA12865596300BBDF88 /* LoginPresenter.swift in Sources */,
 				54947FA32865596300BBDF88 /* LoginRouter.swift in Sources */,
+				54947FCE28693FFB00BBDF88 /* ItemWorker.swift in Sources */,
 				54947FBD2865823700BBDF88 /* MapViewController.swift in Sources */,
 				54947FA8286569A000BBDF88 /* LoginView.swift in Sources */,
 				54947FA62865596300BBDF88 /* LoginInteractor.swift in Sources */,
 				54947FA22865596300BBDF88 /* LoginWorker.swift in Sources */,
 				54947FC02865869100BBDF88 /* MapView.swift in Sources */,
+				54947FD52869401800BBDF88 /* ItemView.swift in Sources */,
+				54947FD128693FFB00BBDF88 /* ItemViewController.swift in Sources */,
 				54947FBE2865823700BBDF88 /* MapInteractor.swift in Sources */,
 				54947FB028656D9800BBDF88 /* Color+Extension.swift in Sources */,
+				54947FD228693FFB00BBDF88 /* ItemInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

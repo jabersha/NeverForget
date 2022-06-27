@@ -17,6 +17,7 @@ protocol LoginBusinessLogic
     func doSomething(request: Login.Something.Request)
     func doLoadView(request: Login.LoginView.Request)
     func doMapView()
+    func doListView()
 
 
 }
@@ -49,9 +50,12 @@ class LoginInteractor: LoginBusinessLogic, LoginDataStore{
     }
     
     func doMapView() {
-        
         presenter?.presentMapView()
         
+    }
+    
+    func doListView() {
+        presenter?.presentItemView()
     }
     
 }
