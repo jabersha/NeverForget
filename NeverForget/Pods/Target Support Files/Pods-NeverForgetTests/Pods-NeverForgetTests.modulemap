@@ -1,0 +1,6 @@
+framework module Pods_NeverForgetTests {
+  umbrella header "Pods-NeverForgetTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

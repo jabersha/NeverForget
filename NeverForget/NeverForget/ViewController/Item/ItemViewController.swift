@@ -13,6 +13,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import GoogleMaps
 
 protocol ItemDisplayLogic{
 //    func displaySomething(viewModel: Item.Something.ViewModel)
@@ -21,7 +22,7 @@ protocol ItemDisplayLogic{
 class ItemViewController: UIViewController, ItemDisplayLogic{
     var interactor: ItemBusinessLogic?
     var router: (NSObjectProtocol & ItemRoutingLogic & ItemDataPassing)?
-    var locationManager:CLLocationManager!
+    private var locationManager = CLLocationManager()
     var itemView = ItemView()
     
     // MARK: Object lifecycle
@@ -59,27 +60,30 @@ class ItemViewController: UIViewController, ItemDisplayLogic{
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        determineCurrentLocation()
+        self.locationManager.delegate = self
+        self.locationManager.requestAlwaysAuthorization()
+        self.locationManager.startUpdatingLocation()
+        
     }
 }
 
 extension ItemViewController: CodeView{
     func buildHierarchy() {
-        view.addSubview(itemView.mapsView)
+        view.addSubview(itemView.gmaps)
         view.addSubview(itemView.table)
         view.addSubview(itemView.bottomView)
         view.addSubview(itemView.addBtn)
     }
     
     func configConstraints() {
-        itemView.mapsView.snp.makeConstraints { make in
+        itemView.gmaps.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide)
             make.height.equalTo(250)
             make.right.left.equalToSuperview()
         }
         
         itemView.table.snp.makeConstraints { make in
-            make.top.equalTo(itemView.mapsView.snp.bottom)
+            make.top.equalTo(itemView.gmaps.snp.bottom)
             make.right.left.equalToSuperview()
             make.bottom.equalTo(itemView.bottomView.snp.top)
         }
@@ -107,6 +111,17 @@ extension ItemViewController: CodeView{
         itemView.addBtn.backgroundColor = .systemMint
         itemView.bottomView.backgroundColor = .systemPink
         
+        if traitCollection.userInterfaceStyle == .dark {
+            do {
+                 if let styleURL = Bundle.main.url(forResource: "maps", withExtension: "json") {
+                     itemView.gmaps.mapStyle = try GMSMapStyle(contentsOfFileURL: styleURL)
+                 } else {
+                   NSLog("Unable to find style.json")
+                 }
+               } catch {
+                 NSLog("One or more of the map styles failed to load. \(error)")
+               }
+        }
     }
 }
 
@@ -128,29 +143,17 @@ extension ItemViewController: UITableViewDelegate, UITableViewDataSource{
     
 }
 
-extension ItemViewController: MKMapViewDelegate, CLLocationManagerDelegate {
-    
+extension ItemViewController: CLLocationManagerDelegate {
+  
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let mUserLocation:CLLocation = locations[0] as CLLocation
-        
-        let center = CLLocationCoordinate2D(latitude: mUserLocation.coordinate.latitude, longitude: mUserLocation.coordinate.longitude)
-        let mRegion = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
-        
-        itemView.mapsView.setRegion(mRegion, animated: true)
-    }
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print("Error - locationManager: \(error.localizedDescription)")
-    }
-    //MARK:- Intance Methods
-    
-    func determineCurrentLocation() {
-        locationManager = CLLocationManager()
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestAlwaysAuthorization()
-        
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.startUpdatingLocation()
-        }
+
+        let location = locations.last
+
+        let camera = GMSCameraPosition.camera(withLatitude: (location?.coordinate.latitude)!, longitude: (location?.coordinate.longitude)!, zoom: 17.0)
+
+        itemView.gmaps.animate(to: camera)
+
+        self.locationManager.stopUpdatingLocation()
+
     }
 }

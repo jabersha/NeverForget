@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		350BA451D782FDEE9808930D /* Pods_NeverForget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AEB8D710BA6EFEFDFB076C /* Pods_NeverForget.framework */; };
 		54947F642865573D00BBDF88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947F632865573D00BBDF88 /* AppDelegate.swift */; };
 		54947F662865573D00BBDF88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947F652865573D00BBDF88 /* SceneDelegate.swift */; };
 		54947F682865573D00BBDF88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947F672865573D00BBDF88 /* ViewController.swift */; };
@@ -42,6 +43,9 @@
 		54947FD228693FFB00BBDF88 /* ItemInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FCC28693FFB00BBDF88 /* ItemInteractor.swift */; };
 		54947FD52869401800BBDF88 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FD42869401800BBDF88 /* ItemView.swift */; };
 		54947FD7286959D200BBDF88 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54947FD6286959D100BBDF88 /* ItemCell.swift */; };
+		549E87E2287A91D3001B177B /* maps.json in Resources */ = {isa = PBXBuildFile; fileRef = 549E87E1287A91D3001B177B /* maps.json */; };
+		579BB0C9F972C3F09413A756 /* Pods_NeverForget_NeverForgetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF056C335ABE7CEBC6D27305 /* Pods_NeverForget_NeverForgetUITests.framework */; };
+		9FFEA2C67CD9923F503E683E /* Pods_NeverForgetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 887A500906BEBD756442ADAF /* Pods_NeverForgetTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10AFCDE529FD3AB59CC0710D /* Pods-NeverForget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeverForget.debug.xcconfig"; path = "Target Support Files/Pods-NeverForget/Pods-NeverForget.debug.xcconfig"; sourceTree = "<group>"; };
+		14AEB8D710BA6EFEFDFB076C /* Pods_NeverForget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeverForget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54947F602865573D00BBDF88 /* NeverForget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeverForget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54947F632865573D00BBDF88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54947F652865573D00BBDF88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +106,14 @@
 		54947FCC28693FFB00BBDF88 /* ItemInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInteractor.swift; sourceTree = "<group>"; };
 		54947FD42869401800BBDF88 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		54947FD6286959D100BBDF88 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		549E87E1287A91D3001B177B /* maps.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = maps.json; path = ../../../../../../Downloads/maps.json; sourceTree = "<group>"; };
+		887A500906BEBD756442ADAF /* Pods_NeverForgetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeverForgetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A02D04B5AC39670A127DE47D /* Pods-NeverForget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeverForget.release.xcconfig"; path = "Target Support Files/Pods-NeverForget/Pods-NeverForget.release.xcconfig"; sourceTree = "<group>"; };
+		CF056C335ABE7CEBC6D27305 /* Pods_NeverForget_NeverForgetUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeverForget_NeverForgetUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBCED80EA3B84CC8233017D8 /* Pods-NeverForget-NeverForgetUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeverForget-NeverForgetUITests.debug.xcconfig"; path = "Target Support Files/Pods-NeverForget-NeverForgetUITests/Pods-NeverForget-NeverForgetUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F00AE3E1B044FF7D6DC8C5B2 /* Pods-NeverForget-NeverForgetUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeverForget-NeverForgetUITests.release.xcconfig"; path = "Target Support Files/Pods-NeverForget-NeverForgetUITests/Pods-NeverForget-NeverForgetUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F65597C3E6901CA5EA70C678 /* Pods-NeverForgetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeverForgetTests.release.xcconfig"; path = "Target Support Files/Pods-NeverForgetTests/Pods-NeverForgetTests.release.xcconfig"; sourceTree = "<group>"; };
+		FAB3B3DD98582A14A0341073 /* Pods-NeverForgetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeverForgetTests.debug.xcconfig"; path = "Target Support Files/Pods-NeverForgetTests/Pods-NeverForgetTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +123,7 @@
 			files = (
 				54947FC32867CD4300BBDF88 /* MapKit.framework in Frameworks */,
 				54947FAB28656A6400BBDF88 /* SnapKit in Frameworks */,
+				350BA451D782FDEE9808930D /* Pods_NeverForget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FFEA2C67CD9923F503E683E /* Pods_NeverForgetTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579BB0C9F972C3F09413A756 /* Pods_NeverForget_NeverForgetUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +154,7 @@
 				54947F862865574000BBDF88 /* NeverForgetUITests */,
 				54947F612865573D00BBDF88 /* Products */,
 				54947FC12867CD4300BBDF88 /* Frameworks */,
+				E372C3D2E9727386D0FB0D18 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -218,6 +236,7 @@
 		54947FAC28656A7F00BBDF88 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				549E87E0287A9167001B177B /* Json */,
 				54947FAD28656AB900BBDF88 /* CodeView.swift */,
 				54947FAF28656D9800BBDF88 /* Color+Extension.swift */,
 			);
@@ -250,6 +269,9 @@
 			isa = PBXGroup;
 			children = (
 				54947FC22867CD4300BBDF88 /* MapKit.framework */,
+				14AEB8D710BA6EFEFDFB076C /* Pods_NeverForget.framework */,
+				CF056C335ABE7CEBC6D27305 /* Pods_NeverForget_NeverForgetUITests.framework */,
+				887A500906BEBD756442ADAF /* Pods_NeverForgetTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -277,6 +299,27 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		549E87E0287A9167001B177B /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				549E87E1287A91D3001B177B /* maps.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		E372C3D2E9727386D0FB0D18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10AFCDE529FD3AB59CC0710D /* Pods-NeverForget.debug.xcconfig */,
+				A02D04B5AC39670A127DE47D /* Pods-NeverForget.release.xcconfig */,
+				EBCED80EA3B84CC8233017D8 /* Pods-NeverForget-NeverForgetUITests.debug.xcconfig */,
+				F00AE3E1B044FF7D6DC8C5B2 /* Pods-NeverForget-NeverForgetUITests.release.xcconfig */,
+				FAB3B3DD98582A14A0341073 /* Pods-NeverForgetTests.debug.xcconfig */,
+				F65597C3E6901CA5EA70C678 /* Pods-NeverForgetTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -284,9 +327,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54947F8D2865574000BBDF88 /* Build configuration list for PBXNativeTarget "NeverForget" */;
 			buildPhases = (
+				4ADFE5B0963A322C985A9DCA /* [CP] Check Pods Manifest.lock */,
 				54947F5C2865573D00BBDF88 /* Sources */,
 				54947F5D2865573D00BBDF88 /* Frameworks */,
 				54947F5E2865573D00BBDF88 /* Resources */,
+				4AF41D2ECAF856D06AC3D655 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -304,6 +349,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54947F902865574000BBDF88 /* Build configuration list for PBXNativeTarget "NeverForgetTests" */;
 			buildPhases = (
+				6D03EEC135667AB59005850F /* [CP] Check Pods Manifest.lock */,
 				54947F752865574000BBDF88 /* Sources */,
 				54947F762865574000BBDF88 /* Frameworks */,
 				54947F772865574000BBDF88 /* Resources */,
@@ -322,9 +368,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54947F932865574000BBDF88 /* Build configuration list for PBXNativeTarget "NeverForgetUITests" */;
 			buildPhases = (
+				531A03E4CE2D9D8D0C920ED3 /* [CP] Check Pods Manifest.lock */,
 				54947F7F2865574000BBDF88 /* Sources */,
 				54947F802865574000BBDF88 /* Frameworks */,
 				54947F812865574000BBDF88 /* Resources */,
+				1B7A9271A9684A85F5F063EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -387,6 +435,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				549E87E2287A91D3001B177B /* maps.json in Resources */,
 				54947F732865574000BBDF88 /* LaunchScreen.storyboard in Resources */,
 				54947F702865574000BBDF88 /* Assets.xcassets in Resources */,
 			);
@@ -407,6 +456,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B7A9271A9684A85F5F063EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeverForget-NeverForgetUITests/Pods-NeverForget-NeverForgetUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeverForget-NeverForgetUITests/Pods-NeverForget-NeverForgetUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeverForget-NeverForgetUITests/Pods-NeverForget-NeverForgetUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4ADFE5B0963A322C985A9DCA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NeverForget-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AF41D2ECAF856D06AC3D655 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeverForget/Pods-NeverForget-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeverForget/Pods-NeverForget-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeverForget/Pods-NeverForget-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		531A03E4CE2D9D8D0C920ED3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NeverForget-NeverForgetUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D03EEC135667AB59005850F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NeverForgetTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		54947F5C2865573D00BBDF88 /* Sources */ = {
@@ -606,6 +758,7 @@
 		};
 		54947F8E2865574000BBDF88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10AFCDE529FD3AB59CC0710D /* Pods-NeverForget.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -634,6 +787,7 @@
 		};
 		54947F8F2865574000BBDF88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A02D04B5AC39670A127DE47D /* Pods-NeverForget.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -662,6 +816,7 @@
 		};
 		54947F912865574000BBDF88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAB3B3DD98582A14A0341073 /* Pods-NeverForgetTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -682,6 +837,7 @@
 		};
 		54947F922865574000BBDF88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F65597C3E6901CA5EA70C678 /* Pods-NeverForgetTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -702,6 +858,7 @@
 		};
 		54947F942865574000BBDF88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBCED80EA3B84CC8233017D8 /* Pods-NeverForget-NeverForgetUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -720,6 +877,7 @@
 		};
 		54947F952865574000BBDF88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F00AE3E1B044FF7D6DC8C5B2 /* Pods-NeverForget-NeverForgetUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

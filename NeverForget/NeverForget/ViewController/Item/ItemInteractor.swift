@@ -35,7 +35,7 @@ class ItemInteractor: ItemBusinessLogic, ItemDataStore
     worker = ItemWorker()
     worker?.doSomeWork()
     
-    let response = Item.Something.Response()
+//    let response = Item.Something.Response()
 //    presenter?.presentSomething(response: response)
   }
 }

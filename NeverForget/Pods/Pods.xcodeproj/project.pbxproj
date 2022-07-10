@@ -1,0 +1,922 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 46921981F609C5BA3CB72EC4EA41299D /* Build configuration list for PBXAggregateTarget "GoogleMaps" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = GoogleMaps;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1359F2DB3AD6F6C96E38B0BB38D5C0B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		150BE0D994CC9FE7DA8CE5232D02B581 /* Pods-NeverForget-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A64A2D83686FFB8549034084500B87C9 /* Pods-NeverForget-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AE27E42C70A5A7F9F8579FEAAB0D231 /* Pods-NeverForget-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4380C820A174CEA3E92625D3006B3AB5 /* Pods-NeverForget-dummy.m */; };
+		3D6D2F6207C39C596E37E153ECD67ECD /* Pods-NeverForgetTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE07CC096B15A44104684925FB6AAA1 /* Pods-NeverForgetTests-dummy.m */; };
+		6C047950E9942CE4AC3EEC072B81A3D9 /* Pods-NeverForget-NeverForgetUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EE957E033C323408E93F2C82E8C5DE /* Pods-NeverForget-NeverForgetUITests-dummy.m */; };
+		79BFAB168ED1ABFD805D9F757E637D8A /* Pods-NeverForget-NeverForgetUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0E77909E61427A60FD3764686AB40A3 /* Pods-NeverForget-NeverForgetUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7AC23FF003AC6F811922D029C3C1C1D7 /* Pods-NeverForgetTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E250543CAF4B8860125F88791E5E9218 /* Pods-NeverForgetTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA809E821DDC6DF26B9AA4F891C08C4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E2BE0333CCE35807EF6BDFF910D0923A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		397402AA8C7908B9DF73C19A5F60A6AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+		65E7A8641C63AC0A9E7C6AE3F94E9D9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+		A10CF1B36E2305E04312913A522787F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F57B1CDAA590971280B6EA08863AFBB;
+			remoteInfo = "Pods-NeverForget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01AF48CF5646ADAB5D7324A8169AFF03 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		0620E7A682AA00E8B79ECE9EFC94AB7D /* Pods-NeverForget-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NeverForget-Info.plist"; sourceTree = "<group>"; };
+		195AE76C3EDD5426FCB1B6906F5E8371 /* Pods-NeverForget-NeverForgetUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NeverForget-NeverForgetUITests.modulemap"; sourceTree = "<group>"; };
+		31626A050AD253446DE99566871841BE /* Pods-NeverForgetTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NeverForgetTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4380C820A174CEA3E92625D3006B3AB5 /* Pods-NeverForget-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NeverForget-dummy.m"; sourceTree = "<group>"; };
+		45A76F2CDA54B43F62E3E48FB448A7B8 /* Pods-NeverForget */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NeverForget"; path = Pods_NeverForget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45E97480909384A044B228DDF9D3AF36 /* Pods-NeverForget-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NeverForget-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5A190EE60B28A5A290CF0F7FA8C55A92 /* Pods-NeverForget.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NeverForget.modulemap"; sourceTree = "<group>"; };
+		5AA0BA5D3C2D43D5BD2C325ED6F10EB1 /* Pods-NeverForget-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NeverForget-acknowledgements.plist"; sourceTree = "<group>"; };
+		6056478A50451DF3645773F36E8B1120 /* Pods-NeverForget-NeverForgetUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NeverForget-NeverForgetUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		65979E1737AC2081CDCFAFCAF1DD347F /* Pods-NeverForgetTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NeverForgetTests"; path = Pods_NeverForgetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		679555EB711EE0D9C37D7C14BECCA5CF /* Pods-NeverForget-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NeverForget-resources.sh"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		75DA7F54ED4F347D73E5F73FC254029E /* Pods-NeverForget-NeverForgetUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NeverForget-NeverForgetUITests-Info.plist"; sourceTree = "<group>"; };
+		7AAFC22833F5C43615FAFE99594B6780 /* Pods-NeverForgetTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NeverForgetTests.modulemap"; sourceTree = "<group>"; };
+		7ADD9FB4A746EA850EC1D407540F048D /* Pods-NeverForget-NeverForgetUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NeverForget-NeverForgetUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7BE07CC096B15A44104684925FB6AAA1 /* Pods-NeverForgetTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NeverForgetTests-dummy.m"; sourceTree = "<group>"; };
+		80EE957E033C323408E93F2C82E8C5DE /* Pods-NeverForget-NeverForgetUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NeverForget-NeverForgetUITests-dummy.m"; sourceTree = "<group>"; };
+		857976D1A4BCFB244F04D61D661977F5 /* Pods-NeverForget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NeverForget.release.xcconfig"; sourceTree = "<group>"; };
+		87F4EE87D6C21FBD5D2866BCDDD0EA0F /* Pods-NeverForget-NeverForgetUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NeverForget-NeverForgetUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A10D92BE8FB7B4F677F5684A72366D01 /* Pods-NeverForgetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NeverForgetTests.release.xcconfig"; sourceTree = "<group>"; };
+		A2BF2F8A6392B5EFF07197872999FDCD /* Pods-NeverForget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NeverForget.debug.xcconfig"; sourceTree = "<group>"; };
+		A64A2D83686FFB8549034084500B87C9 /* Pods-NeverForget-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NeverForget-umbrella.h"; sourceTree = "<group>"; };
+		AABE3D21F0BE384435A5D7C08A8FD5BB /* GoogleMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.debug.xcconfig; sourceTree = "<group>"; };
+		AC638360B1D688AEEB47B1D507E67D9E /* Pods-NeverForgetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NeverForgetTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B0E77909E61427A60FD3764686AB40A3 /* Pods-NeverForget-NeverForgetUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NeverForget-NeverForgetUITests-umbrella.h"; sourceTree = "<group>"; };
+		BD76367DF1CDF75DFF62BDB3C3A67150 /* Pods-NeverForget-NeverForgetUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NeverForget-NeverForgetUITests-resources.sh"; sourceTree = "<group>"; };
+		C3D0978B919EA2ECF2A2F8466075BB51 /* GoogleMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.release.xcconfig; sourceTree = "<group>"; };
+		C7E7687D1A2E384B82B0C427F1ADBB5C /* Pods-NeverForget-NeverForgetUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NeverForget-NeverForgetUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CCAF84BDED2FB6E96E950E18E0742136 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		E2309F84CDF17FF87E66D6CDB6B517AB /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		E250543CAF4B8860125F88791E5E9218 /* Pods-NeverForgetTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NeverForgetTests-umbrella.h"; sourceTree = "<group>"; };
+		E2F4E7C722407F81715B67A5F9EC4FAD /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		E3F1BF84DFC28DE73290141351AECCA0 /* Pods-NeverForgetTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NeverForgetTests-Info.plist"; sourceTree = "<group>"; };
+		F66CCE625077692DC8BA303AB9FC7CF0 /* Pods-NeverForget-NeverForgetUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NeverForget-NeverForgetUITests"; path = Pods_NeverForget_NeverForgetUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDC58C68220AD585CBC96A9E6B4F23D6 /* Pods-NeverForgetTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NeverForgetTests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49D140AAA285F13D157A892BDA7A414E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA809E821DDC6DF26B9AA4F891C08C4E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89031739DC58A1E5D398F4924BB240BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2BE0333CCE35807EF6BDFF910D0923A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA1010FF26B122B0401B8CE388B50D4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1359F2DB3AD6F6C96E38B0BB38D5C0B4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04EB2FBE739B270307B48657EC5ED454 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45A76F2CDA54B43F62E3E48FB448A7B8 /* Pods-NeverForget */,
+				F66CCE625077692DC8BA303AB9FC7CF0 /* Pods-NeverForget-NeverForgetUITests */,
+				65979E1737AC2081CDCFAFCAF1DD347F /* Pods-NeverForgetTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AEA1CF3E36FF8113F6FFD7526BE5F98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCAF84BDED2FB6E96E950E18E0742136 /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		23258B9441300E23C80256BEEFD1F964 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				5FCC553E82707BA26B1F6EDC00161B0D /* Base */,
+				387015716759109261086A8C0CA736F5 /* Maps */,
+				9601491F11C5653D98D1EB5DF2155DFE /* Support Files */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		2B3FE7251E0E23C3AE7A3E42495D1FF4 /* Pods-NeverForgetTests */ = {
+			isa = PBXGroup;
+			children = (
+				7AAFC22833F5C43615FAFE99594B6780 /* Pods-NeverForgetTests.modulemap */,
+				31626A050AD253446DE99566871841BE /* Pods-NeverForgetTests-acknowledgements.markdown */,
+				FDC58C68220AD585CBC96A9E6B4F23D6 /* Pods-NeverForgetTests-acknowledgements.plist */,
+				7BE07CC096B15A44104684925FB6AAA1 /* Pods-NeverForgetTests-dummy.m */,
+				E3F1BF84DFC28DE73290141351AECCA0 /* Pods-NeverForgetTests-Info.plist */,
+				E250543CAF4B8860125F88791E5E9218 /* Pods-NeverForgetTests-umbrella.h */,
+				AC638360B1D688AEEB47B1D507E67D9E /* Pods-NeverForgetTests.debug.xcconfig */,
+				A10D92BE8FB7B4F677F5684A72366D01 /* Pods-NeverForgetTests.release.xcconfig */,
+			);
+			name = "Pods-NeverForgetTests";
+			path = "Target Support Files/Pods-NeverForgetTests";
+			sourceTree = "<group>";
+		};
+		387015716759109261086A8C0CA736F5 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				F9621E38CA93CD5E47C3F28B4F0AF3DD /* Frameworks */,
+				E48211C21EA696EBC32B31525F5FFA67 /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5FCC553E82707BA26B1F6EDC00161B0D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1AEA1CF3E36FF8113F6FFD7526BE5F98 /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		77E5F1408C8B8A38876A1DF80288583A /* Pods-NeverForget-NeverForgetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				195AE76C3EDD5426FCB1B6906F5E8371 /* Pods-NeverForget-NeverForgetUITests.modulemap */,
+				C7E7687D1A2E384B82B0C427F1ADBB5C /* Pods-NeverForget-NeverForgetUITests-acknowledgements.markdown */,
+				6056478A50451DF3645773F36E8B1120 /* Pods-NeverForget-NeverForgetUITests-acknowledgements.plist */,
+				80EE957E033C323408E93F2C82E8C5DE /* Pods-NeverForget-NeverForgetUITests-dummy.m */,
+				75DA7F54ED4F347D73E5F73FC254029E /* Pods-NeverForget-NeverForgetUITests-Info.plist */,
+				BD76367DF1CDF75DFF62BDB3C3A67150 /* Pods-NeverForget-NeverForgetUITests-resources.sh */,
+				B0E77909E61427A60FD3764686AB40A3 /* Pods-NeverForget-NeverForgetUITests-umbrella.h */,
+				87F4EE87D6C21FBD5D2866BCDDD0EA0F /* Pods-NeverForget-NeverForgetUITests.debug.xcconfig */,
+				7ADD9FB4A746EA850EC1D407540F048D /* Pods-NeverForget-NeverForgetUITests.release.xcconfig */,
+			);
+			name = "Pods-NeverForget-NeverForgetUITests";
+			path = "Target Support Files/Pods-NeverForget-NeverForgetUITests";
+			sourceTree = "<group>";
+		};
+		9601491F11C5653D98D1EB5DF2155DFE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AABE3D21F0BE384435A5D7C08A8FD5BB /* GoogleMaps.debug.xcconfig */,
+				C3D0978B919EA2ECF2A2F8466075BB51 /* GoogleMaps.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleMaps";
+			sourceTree = "<group>";
+		};
+		A2EC105ECD771D7C202269D2246EE556 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D614C4DA09DC1D58D5557C1B5B90FD5E /* Pods-NeverForget */,
+				77E5F1408C8B8A38876A1DF80288583A /* Pods-NeverForget-NeverForgetUITests */,
+				2B3FE7251E0E23C3AE7A3E42495D1FF4 /* Pods-NeverForgetTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				DF3634087891871FA7B65CC4A8E6DB71 /* Pods */,
+				04EB2FBE739B270307B48657EC5ED454 /* Products */,
+				A2EC105ECD771D7C202269D2246EE556 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D614C4DA09DC1D58D5557C1B5B90FD5E /* Pods-NeverForget */ = {
+			isa = PBXGroup;
+			children = (
+				5A190EE60B28A5A290CF0F7FA8C55A92 /* Pods-NeverForget.modulemap */,
+				45E97480909384A044B228DDF9D3AF36 /* Pods-NeverForget-acknowledgements.markdown */,
+				5AA0BA5D3C2D43D5BD2C325ED6F10EB1 /* Pods-NeverForget-acknowledgements.plist */,
+				4380C820A174CEA3E92625D3006B3AB5 /* Pods-NeverForget-dummy.m */,
+				0620E7A682AA00E8B79ECE9EFC94AB7D /* Pods-NeverForget-Info.plist */,
+				679555EB711EE0D9C37D7C14BECCA5CF /* Pods-NeverForget-resources.sh */,
+				A64A2D83686FFB8549034084500B87C9 /* Pods-NeverForget-umbrella.h */,
+				A2BF2F8A6392B5EFF07197872999FDCD /* Pods-NeverForget.debug.xcconfig */,
+				857976D1A4BCFB244F04D61D661977F5 /* Pods-NeverForget.release.xcconfig */,
+			);
+			name = "Pods-NeverForget";
+			path = "Target Support Files/Pods-NeverForget";
+			sourceTree = "<group>";
+		};
+		DF3634087891871FA7B65CC4A8E6DB71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23258B9441300E23C80256BEEFD1F964 /* GoogleMaps */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E48211C21EA696EBC32B31525F5FFA67 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E2309F84CDF17FF87E66D6CDB6B517AB /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F9621E38CA93CD5E47C3F28B4F0AF3DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01AF48CF5646ADAB5D7324A8169AFF03 /* GoogleMaps.framework */,
+				E2F4E7C722407F81715B67A5F9EC4FAD /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		30660386BDD2C249E117270251F0359A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150BE0D994CC9FE7DA8CE5232D02B581 /* Pods-NeverForget-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B306C358A9960BA86CC8914EFFF4DBDB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79BFAB168ED1ABFD805D9F757E637D8A /* Pods-NeverForget-NeverForgetUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF99C0E9030311E4A80A8D6EB258C30E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AC23FF003AC6F811922D029C3C1C1D7 /* Pods-NeverForgetTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		38B049AD8C3A60638CFF947B1F764DE7 /* Pods-NeverForgetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6FD53C37909AFDF4B29DE716A8B0234 /* Build configuration list for PBXNativeTarget "Pods-NeverForgetTests" */;
+			buildPhases = (
+				EF99C0E9030311E4A80A8D6EB258C30E /* Headers */,
+				59E43D4F281ACA9FF838433EFE2155A4 /* Sources */,
+				BA1010FF26B122B0401B8CE388B50D4C /* Frameworks */,
+				EB758A82479F866899C699F8DD50B0E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5ED01502C89E3D366599F6E1A4B91A30 /* PBXTargetDependency */,
+			);
+			name = "Pods-NeverForgetTests";
+			productName = Pods_NeverForgetTests;
+			productReference = 65979E1737AC2081CDCFAFCAF1DD347F /* Pods-NeverForgetTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		9F57B1CDAA590971280B6EA08863AFBB /* Pods-NeverForget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AD9E72F6A448E46E372D830592ED1E1 /* Build configuration list for PBXNativeTarget "Pods-NeverForget" */;
+			buildPhases = (
+				30660386BDD2C249E117270251F0359A /* Headers */,
+				DC218187646F19DC8614CE732D0B3E29 /* Sources */,
+				49D140AAA285F13D157A892BDA7A414E /* Frameworks */,
+				C6066972B81ECDAF447A24FB63250928 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92CC2512CF19DBF29BC9A7D5020AA52F /* PBXTargetDependency */,
+			);
+			name = "Pods-NeverForget";
+			productName = Pods_NeverForget;
+			productReference = 45A76F2CDA54B43F62E3E48FB448A7B8 /* Pods-NeverForget */;
+			productType = "com.apple.product-type.framework";
+		};
+		FF6C176E46618EFA8F4AEDB4C89CFD61 /* Pods-NeverForget-NeverForgetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 947EDD33DCCEBC65BD2EC9BA4C881614 /* Build configuration list for PBXNativeTarget "Pods-NeverForget-NeverForgetUITests" */;
+			buildPhases = (
+				B306C358A9960BA86CC8914EFFF4DBDB /* Headers */,
+				897D659F7B458A675C2FD331DE8E04AF /* Sources */,
+				89031739DC58A1E5D398F4924BB240BF /* Frameworks */,
+				25A5DCDB0DBA73873B2C0B0AF4C62336 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCDE54F425C2F476A0C4893BC9412E14 /* PBXTargetDependency */,
+			);
+			name = "Pods-NeverForget-NeverForgetUITests";
+			productName = Pods_NeverForget_NeverForgetUITests;
+			productReference = F66CCE625077692DC8BA303AB9FC7CF0 /* Pods-NeverForget-NeverForgetUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 04EB2FBE739B270307B48657EC5ED454 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */,
+				9F57B1CDAA590971280B6EA08863AFBB /* Pods-NeverForget */,
+				FF6C176E46618EFA8F4AEDB4C89CFD61 /* Pods-NeverForget-NeverForgetUITests */,
+				38B049AD8C3A60638CFF947B1F764DE7 /* Pods-NeverForgetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25A5DCDB0DBA73873B2C0B0AF4C62336 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6066972B81ECDAF447A24FB63250928 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB758A82479F866899C699F8DD50B0E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59E43D4F281ACA9FF838433EFE2155A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6D2F6207C39C596E37E153ECD67ECD /* Pods-NeverForgetTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		897D659F7B458A675C2FD331DE8E04AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C047950E9942CE4AC3EEC072B81A3D9 /* Pods-NeverForget-NeverForgetUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC218187646F19DC8614CE732D0B3E29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AE27E42C70A5A7F9F8579FEAAB0D231 /* Pods-NeverForget-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5ED01502C89E3D366599F6E1A4B91A30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-NeverForget";
+			target = 9F57B1CDAA590971280B6EA08863AFBB /* Pods-NeverForget */;
+			targetProxy = A10CF1B36E2305E04312913A522787F3 /* PBXContainerItemProxy */;
+		};
+		92CC2512CF19DBF29BC9A7D5020AA52F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = 397402AA8C7908B9DF73C19A5F60A6AD /* PBXContainerItemProxy */;
+		};
+		BCDE54F425C2F476A0C4893BC9412E14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = 65E7A8641C63AC0A9E7C6AE3F94E9D9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0657E6247C7E8744275AACEBAB511440 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AABE3D21F0BE384435A5D7C08A8FD5BB /* GoogleMaps.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		09909ECBA13E8F70A928465E7F7A9A92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2DE0D8898245310716431F92FA4989FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		610FD9F24B0D425991E76EF8D5ACC8E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ADD9FB4A746EA850EC1D407540F048D /* Pods-NeverForget-NeverForgetUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NeverForget-NeverForgetUITests/Pods-NeverForget-NeverForgetUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NeverForget-NeverForgetUITests/Pods-NeverForget-NeverForgetUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		68D02CBB64CC7267D6DA603E058C7F43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2BF2F8A6392B5EFF07197872999FDCD /* Pods-NeverForget.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NeverForget/Pods-NeverForget-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NeverForget/Pods-NeverForget.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		719836F57234309FD4E4D212717D6E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A10D92BE8FB7B4F677F5684A72366D01 /* Pods-NeverForgetTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NeverForgetTests/Pods-NeverForgetTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NeverForgetTests/Pods-NeverForgetTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		730B44F8146AFBB95F0DBB4BE7CC8325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 857976D1A4BCFB244F04D61D661977F5 /* Pods-NeverForget.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NeverForget/Pods-NeverForget-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NeverForget/Pods-NeverForget.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B62C1CDEE2C49E2ED6C9D3CD0EF3968F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC638360B1D688AEEB47B1D507E67D9E /* Pods-NeverForgetTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NeverForgetTests/Pods-NeverForgetTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NeverForgetTests/Pods-NeverForgetTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EC41248A65ECC70CFE1AF51BDBD8D596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87F4EE87D6C21FBD5D2866BCDDD0EA0F /* Pods-NeverForget-NeverForgetUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NeverForget-NeverForgetUITests/Pods-NeverForget-NeverForgetUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NeverForget-NeverForgetUITests/Pods-NeverForget-NeverForgetUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EC690621027EA58B5D021A1004DD63B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3D0978B919EA2ECF2A2F8466075BB51 /* GoogleMaps.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AD9E72F6A448E46E372D830592ED1E1 /* Build configuration list for PBXNativeTarget "Pods-NeverForget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68D02CBB64CC7267D6DA603E058C7F43 /* Debug */,
+				730B44F8146AFBB95F0DBB4BE7CC8325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46921981F609C5BA3CB72EC4EA41299D /* Build configuration list for PBXAggregateTarget "GoogleMaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0657E6247C7E8744275AACEBAB511440 /* Debug */,
+				EC690621027EA58B5D021A1004DD63B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09909ECBA13E8F70A928465E7F7A9A92 /* Debug */,
+				2DE0D8898245310716431F92FA4989FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		947EDD33DCCEBC65BD2EC9BA4C881614 /* Build configuration list for PBXNativeTarget "Pods-NeverForget-NeverForgetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC41248A65ECC70CFE1AF51BDBD8D596 /* Debug */,
+				610FD9F24B0D425991E76EF8D5ACC8E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6FD53C37909AFDF4B29DE716A8B0234 /* Build configuration list for PBXNativeTarget "Pods-NeverForgetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B62C1CDEE2C49E2ED6C9D3CD0EF3968F /* Debug */,
+				719836F57234309FD4E4D212717D6E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

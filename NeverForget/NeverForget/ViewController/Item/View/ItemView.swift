@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import MapKit
+import GoogleMaps
 
 
 class ItemView: UIView {
@@ -19,14 +19,11 @@ class ItemView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    lazy var mapsView:MKMapView = {
-        let map = MKMapView(frame: .zero)
-        map.mapType = MKMapType.hybrid
-        map.isZoomEnabled = true
-        map.isScrollEnabled = true
-        map.isRotateEnabled = true
-        map.showsUserLocation = true
-        map.pointOfInterestFilter = .init(including: [MKPointOfInterestCategory.store])
+    
+    lazy var gmaps:GMSMapView = {
+        let map = GMSMapView(frame: .zero)
+        map.isMyLocationEnabled = true
+        map.settings.myLocationButton = true
         
         return map
     }()
